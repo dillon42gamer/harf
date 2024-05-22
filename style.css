@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&amp;family=Roboto&amp;display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+margin: 0; padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #61788f;
+}
+
+a:hover {
+  color: #3a4f64;
+}
+
+#blob1, #blob2, #blob3 {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+#blob1 {transform: translate(-50%, -30%);}
+#blob2 {transform: translate(-10%, -50%);}
+#blob3 {transform: translate(-90%, -40%);}
+
+#wrap {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+  z-index: 10;
+}
+
+h1 {
+  font-family: "Cutive Mono", sans-serif;
+  color: #44525f;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+#qe {
+  border: 0.1px solid #b2bdc7;
+  position: absolute;
+  height: 8vh;
+  min-height: 30px;
+  width: 25vw;
+  min-width: 200px;
+  font-size: 20px;
+  color: #46535d;
+  padding: 0px 20px;
+  border-radius: 9999px;
+  font-family: "Roboto", sans-serif;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#qe:focus {
+  outline: none;
+  background-color: #f1f5f8;
+}
+
+#infotext:before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f05a";
+      font-size: 20px;
+      display: inline-block;
+      padding-right: 5px;
+      vertical-align: middle;
+      font-weight: 900;
+}
+
+img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+#pointer {
+	cursor: pointer;
+}
+
+#register-sw {
+  color: white;
+  background: #555555;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 20px;
+  line-height: 16px;
+  display: none;
+}
+
+#register-sw:active {
+  background: #333333;
+}
+
+#register-sw.show {
+  display: block;
+}
+
+
+.nodrag {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
